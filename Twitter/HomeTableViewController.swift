@@ -11,7 +11,7 @@ import UIKit
 class HomeTableViewController: UITableViewController {
 
     var tweetArray = [NSDictionary]()
-    var numberOfTweet = Int!
+    var numberOfTweet = Int()
     
     let myRefreshControl = UIRefreshControl()
     
@@ -24,7 +24,7 @@ class HomeTableViewController: UITableViewController {
     
     @objc func loadTweets(){
         
-        numberOfTweet = 20
+        numberOfTweet = 5
         let myUrl = "https://api.twitter.com/1.1/statuses/home_timeline.json"
         let myParams = ["count": numberOfTweet]
         
@@ -35,15 +35,17 @@ class HomeTableViewController: UITableViewController {
                 self.tweetArray.append(tweet)
             }
             self.tableView.reloadData()
+            self.myRefreshControl.endRefreshing()
             
         }, failure: {(Error) in
+            print(Error.localizedDescription)
             print("Could not retreive tweets! oh no!!")})
     }
     
     func loadMoreTweets(){
         
         let myUrl = "https://api.twitter.com/1.1/statuses/home_timeline.json"
-        numberOfTweet = numberOfTweet + 20
+        numberOfTweet = numberOfTweet + 5
         let myParams = ["count": numberOfTweet]
         
         TwitterAPICaller.client?.getDictionariesRequest(url: myUrl, parameters: myParams, success: { (tweets: [NSDictionary]) in
@@ -53,8 +55,10 @@ class HomeTableViewController: UITableViewController {
                 self.tweetArray.append(tweet)
             }
             self.tableView.reloadData()
+            self.myRefreshControl.endRefreshing()
             
         }, failure: {(Error) in
+            print(Error.localizedDescription)
             print("Could not retreive tweets! oh no!!")})
     }
     
@@ -74,9 +78,9 @@ class HomeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tweetCell", for: indexPath) as! TweetCellTableViewCell
         
-        let user = tweetArray[indexPath.row]["user"] as? String
+        let user = tweetArray[indexPath.row]["user"] as! NSDictionary
         cell.userNameLabel.text = user["name"] as? String
-        cell.tweetContent.text = tweetArray[indexPath.row]["text"] as! String
+        cell.tweetContent.text = tweetArray[indexPath.row]["text"] as? String
         
         let imageUrl = URL(string: (user["profile_image_url_https"] as? String)!)
         let data = try? Data(contentsOf: imageUrl!)
