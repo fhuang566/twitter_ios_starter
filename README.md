@@ -24,5 +24,5 @@ The following **bonus** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 
-<img src='https://ezgif.com/video-to-gif/ezgif-7-3cfd66600e61.mov'/>
+<img src='https://im7.ezgif.com/tmp/ezgif-7-9882cdaf8d7f.gif'/>
 
