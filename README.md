@@ -23,6 +23,6 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+<img src= "https://im7.ezgif.com/tmp/ezgif-7-4c1b470724b8.gif" width=250><br>
 
-<img src='https://im7.ezgif.com/tmp/ezgif-7-9882cdaf8d7f.gif'/>
 
