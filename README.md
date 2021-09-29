@@ -23,7 +23,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
--![twitter](https://github.com/fhuang566/twitter_ios_starter/twitter.gif)
+![twitter](https://github.com/fhuang566/twitter_ios_starter/master/twitter.gif)
 
 <img src='https://im7.ezgif.com/tmp/ezgif-7-9882cdaf8d7f.gif'/>
 
