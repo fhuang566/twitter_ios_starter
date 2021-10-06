@@ -56,6 +56,7 @@ class TweetCellTableViewCell: UITableViewCell {
     }
     
     func setFavorite(_ isFavorited: Bool){
+        favorited = isFavorited
         if(favorited){
             favButton.setImage(UIImage(named: "favor-icon-red"), for: UIControl.State.normal)
         }else{

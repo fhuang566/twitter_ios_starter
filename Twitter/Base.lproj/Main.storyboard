@@ -153,7 +153,7 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Tweet" id="Bkc-8T-9Bs">
-                            <color key="tintColor" systemColor="systemTealColor"/>
+                            <color key="tintColor" red="0.27544542309999998" green="0.8638201807" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <segue destination="FBr-Cz-Qve" kind="presentation" id="SQe-Di-gJO"/>
                             </connections>
