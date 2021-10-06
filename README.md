@@ -22,7 +22,9 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://im7.ezgif.com/tmp/ezgif-7-2a83c3d3f578.gif' width='' alt='Video Walkthrough' />
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/66151630/136128944-03c933c0-e832-48d5-a416-d71f28fdaa04.gif)
+
+
 
 # Twitter - Part I
 
@@ -48,6 +50,8 @@ The following **bonus** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+
+![twitter](https://user-images.githubusercontent.com/66151630/136129279-a968e16b-c30a-4d4e-b31f-8435b34651cf.gif)
 
 <img src= "https://im2.ezgif.com/tmp/ezgif-2-2c382880005e.gif" width=250><br>
 <img src= "https://im2.ezgif.com/tmp/ezgif-2-c8831b93e560.gif" width=250><br>
