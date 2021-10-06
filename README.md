@@ -49,6 +49,7 @@ The following **bonus** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+
 ![twitter](https://user-images.githubusercontent.com/66151630/136129279-a968e16b-c30a-4d4e-b31f-8435b34651cf.gif)
 
 <img src= "https://im2.ezgif.com/tmp/ezgif-2-2c382880005e.gif" width=250><br>
